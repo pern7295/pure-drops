@@ -1,0 +1,172 @@
+:root {
+  --bs-font-sans-serif: "Montserrat";
+}
+/*----MAIN-ELEMENTER----*/
+
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  margin: 0;
+}
+
+.row {
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  margin-bottom: 3vh;
+}
+
+h3 {
+  font-style: italic;
+}
+
+button {
+  background-color: #f1b9b8;
+  border: none;
+  padding: 0.5rem;
+  font-family: var(--bs-font-sans-serif);
+  font-weight: bold;
+  color: var(--bs-white);
+  width: 100%;
+}
+
+a {
+  font-family: var(--bs-font-sans-serif);
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+a:hover {
+  opacity: 70%;
+  color: black;
+}
+
+/*----OTHER ELEMENTS-----*/
+#splash {
+  background-color: #f6e6e6;
+}
+
+#button-splash {
+  align-items: center;
+}
+
+/* .m-p-costum {
+  padding: 1rem;
+} */
+
+#video {
+  height: 25vh;
+  width: 100%;
+  object-fit: cover;
+  overflow-x: hidden;
+  object-position: 59%;
+}
+
+.carousel-item img {
+  height: 70vh;
+  object-fit: cover;
+  object-position: 50%;
+}
+
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.438);
+  color: black;
+}
+
+.carousel-caption h5 {
+  font-weight: bold;
+}
+
+.flaske-single {
+  height: 70vh;
+  width: 100vw;
+  object-fit: cover;
+  object-position: 50%;
+}
+
+.straw {
+  background-color: #f1b9b8;
+  padding: 3rem;
+}
+
+.lime {
+  background-color: #cfe4b0;
+  padding: 1rem;
+}
+
+.pine {
+  background-color: #f2d194;
+  padding: 1rem;
+}
+
+.mango {
+  background-color: #ffd36b;
+  padding: 1rem;
+}
+
+.infografik {
+  width: 100vw;
+}
+
+.info img {
+  height: auto;
+}
+
+.some {
+  height: 30vh;
+  width: 100vw;
+  object-fit: cover;
+  object-position: 50%;
+}
+
+.color-graphic {
+  width: 50vw;
+  object-fit: contain;
+  object-position: 50%;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+  .splash-mobil {
+    background-image: url(img/splash-mobil.png);
+    background-size: cover;
+    background-position: 48%;
+    height: 55vh;
+  }
+}
+/* END "sm-" 576px and up */
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .splash-mobil {
+    display: none;
+  }
+}
+/* END "md-" 768px and up */
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+/* END "lg-" 992px and up */
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+/* END "xl-" 1200px and up */
+
+/* // Extra Extra large (XXL) devices (XXL screens, 1400px and up) */
+@media (min-width: 1400px) {
+}
+/* END "xxl-" 1400px and up */
