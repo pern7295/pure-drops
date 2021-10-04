@@ -9,7 +9,9 @@ body {
   margin: 0;
 }
 
-.row {
+.no-gutter {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
 }
 
 h1 {
@@ -53,9 +55,20 @@ a:hover {
   color: black;
 }
 
+.nav-knap button {
+  width: auto;
+}
+
 /*----OTHER ELEMENTS-----*/
 #splash {
   background-color: #f6e6e6;
+}
+
+.splash-mobil {
+  background-image: url(img/splash-mobil.png);
+  background-size: cover;
+  background-position: 48%;
+  height: 55vh;
 }
 
 #button-splash {
@@ -90,8 +103,8 @@ a:hover {
 }
 
 .flaske-single {
-  height: 70vh;
-  width: 100vw;
+  height: 50vh;
+  width: 100%;
   object-fit: cover;
   object-position: 50%;
 }
@@ -103,17 +116,17 @@ a:hover {
 
 .lime {
   background-color: #cfe4b0;
-  padding: 1rem;
+  padding: 3rem;
 }
 
 .pine {
   background-color: #f2d194;
-  padding: 1rem;
+  padding: 3rem;
 }
 
 .mango {
   background-color: #ffd36b;
-  padding: 1rem;
+  padding: 3rem;
 }
 
 .infografik {
@@ -125,10 +138,10 @@ a:hover {
 }
 
 .some {
-  height: 30vh;
   width: 100vw;
   object-fit: cover;
   object-position: 50%;
+  height: 25vh;
 }
 
 .color-graphic {
@@ -137,32 +150,78 @@ a:hover {
   object-position: 50%;
 }
 
+.opskrifter-tablet {
+  height: 30vh;
+  object-fit: cover;
+  object-position: 50%;
+}
+
+#tablet-opskrifter {
+  display: none;
+}
+
 /*Small devices (landscape phones, 576px and up)*/
-@media (max-width: 576px) {
-  .splash-mobil {
-    background-image: url(img/splash-mobil.png);
-    background-size: cover;
-    background-position: 48%;
-    height: 55vh;
-  }
+@media (min-width: 576px) {
 }
 /* END "sm-" 576px and up */
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .splash-mobil {
+  #carouselExampleCaptions {
     display: none;
+  }
+
+  #tablet-opskrifter {
+    display: block;
+  }
+
+  .flaske-img {
+    object-fit: cover;
+    object-position: 50%;
+    background-color: #cfe4b0;
   }
 }
 /* END "md-" 768px and up */
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .splash-desk {
+    background-image: url(img/splash.png);
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    height: 75vh;
+  }
+
+  .splash-mobil {
+    display: none;
+  }
 }
 /* END "lg-" 992px and up */
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .splash-desk {
+    background-image: url(img/splash.png);
+    background-size: contain;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    height: 75vh;
+  }
+
+  .desk-sidebar {
+    background-color: #efefef;
+  }
+
+  .flaske-desk {
+    object-fit: cover;
+    object-position: 50%;
+    width: 100%;
+  }
+
+  .grafik-frugt {
+    width: 100%;
+  }
 }
 /* END "xl-" 1200px and up */
 

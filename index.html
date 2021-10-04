@@ -14,19 +14,64 @@
     />
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="rwd.css" />
+    <!-- <link rel="stylesheet" href="rwd.css" /> -->
 
     <title>Pure Drops | Multimediedesign - KEA</title>
   </head>
   <body>
+    <!-------NAVBAR--------->
+    <header class="nav-knap position-fixed w-100">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Pure Drops</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#opskrifter"
+                  >Opskrifter</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#udvalg">Pure Drops udvalg</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <main>
+      <!-------SPLASH---------->
       <section id="splash" class="pb-2">
         <div id="splash-mobile" class="img-fluid container-fluid">
           <div class="row">
             <div class="splash-mobil"></div>
+            <div class="splash-desk col-xl-8"></div>
+            <div class="desk-sidebar col-xl-4 d-none d-xl-block p-5 mt-5">
+              <h1 class="d-xl-block text-end">Pure Drops</h1>
+              <h3 class="d-xl-block text-end">
+                Enjoy pure & conscious syrup drops in happy moments
+              </h3>
+              <br /><br />
+              <div class="row d-none d-xl-flex justify-content-end m-auto">
+                <button class="col-5 m-1" type="button">Se udvalg</button>
+                <button class="col-5 m-1" type="button">Se opskrifter</button>
+              </div>
+            </div>
           </div>
         </div>
-        <div id="pure-navn-mobile" class="m-3 md-m-5">
+        <div class="m-3 md-m-5 d-block d-xl-none">
           <div id="pure-navn" class="container col-12">
             <h1 class="text-center mt-3 d-flex justify-content-center">
               PURE DROPS
@@ -44,25 +89,27 @@
         </div>
       </section>
 
-      <section id="om-os" class="m-p-costum m-4">
-        <h1>Glæde, glitter & god smag</h1>
-        <h2>Det er de små ting der gør en forskel</h2>
-        <p>
-          Pure Drops er en naturlig frugtsirup produceret på skøn overskudsfrugt
-          fra danske butikker.
-          <br /><br />
-          Sirup produceres primært på sukker og modne frugter, og det er derfor
-          ideelt at koge sirup, på frugt der kunne trænge til nyt liv, og dermed
-          mindske madspild.
-          <br /><br />
-          Pure Drops er ikke blot det ideelle bæredygtige alternativ. Med tilsat
-          spiseligt glitter i alle flasker, kan du pifte dine drinks op og
-          imponere dine gæster med et festligt tvist og skabe godt humør, med
-          god samvittighed i livets små og store glæder, der kræver at glassene
-          hæves.
-          <br /><br />
-          Velbekomme og god fornøjelse!
-        </p>
+      <section id="om-os" class="p-5 container">
+        <div class="row">
+          <h1>Glæde, glitter & god smag</h1>
+          <h2>Det er de små ting der gør en forskel</h2>
+          <p>
+            Pure Drops er en naturlig frugtsirup produceret på skøn
+            overskudsfrugt fra danske butikker.
+            <br /><br />
+            Sirup produceres primært på sukker og modne frugter, og det er
+            derfor ideelt at koge sirup, på frugt der kunne trænge til nyt liv,
+            og dermed mindske madspild.
+            <br /><br />
+            Pure Drops er ikke blot det ideelle bæredygtige alternativ. Med
+            tilsat spiseligt glitter i alle flasker, kan du pifte dine drinks op
+            og imponere dine gæster med et festligt tvist og skabe godt humør,
+            med god samvittighed i livets små og store glæder, der kræver at
+            glassene hæves.
+            <br /><br />
+            Velbekomme og god fornøjelse!
+          </p>
+        </div>
       </section>
 
       <div class="img-fluid">
@@ -71,15 +118,18 @@
         </video>
       </div>
 
-      <section id="opskrifter" class="m-p-costum m-4">
-        <h1>Sæt glitter på menuen</h1>
-        <h2>Drinksopskrifter til enhver anledning</h2>
-        <p>
-          Her kan du se opskrifter på de bedste drinks, selvfølgelig mixet med
-          Pure Drops. Nemmere bliver det altså ikke!
-        </p>
+      <section id="opskrifter" class="p-5 container">
+        <div class="row">
+          <h1>Sæt glitter på menuen</h1>
+          <h2>Drinksopskrifter til enhver anledning</h2>
+          <p>
+            Her kan du se opskrifter på de bedste drinks, selvfølgelig mixet med
+            Pure Drops. Nemmere bliver det altså ikke!
+          </p>
+        </div>
       </section>
 
+      <!-------MOBIL KARUSSEL OPSKRIFTER-------->
       <div
         id="carouselExampleCaptions"
         class="carousel slide"
@@ -176,94 +226,220 @@
         </button>
       </div>
 
-      <div class="container">
-        <button class="col-6 offset-3 mt-4" type="button">Se opskrifter</button>
+      <!-----TABLET & DESK OPSKRIFTER------->
+      <div id="tablet-opskrifter" class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex flex-column col-xl-3">
+            <img
+              class="opskrifter-tablet"
+              src="img/green-drink.jpg"
+              alt="Grøn drink"
+            />
+            <h2 class="mt-md-4">Dark 'N' Stormy</h2>
+            <p>
+              Du kender den med garanti - den søde smag af Ginger Beer og mørk
+              rom, nu tilsat med glitrende Pure Drops Lime. Mums!
+            </p>
+            <a class="mt-auto mb-md-3" href="#">Se opskrift</a>
+          </div>
+          <div class="col-md-6 d-xl-flex flex-column col-xl-3 d-none">
+            <img
+              class="opskrifter-tablet"
+              src="img/yellow-drink.jpg"
+              alt="Ananas drink"
+            />
+            <h2 class="mt-md-4">Gin Hass</h2>
+            <p>
+              Man kan altid nuppe en Gin Hass - hvad end det er til festen eller
+              de solrige dage på terassen, passer mango, lemonsodavand og gin
+              altid. Prøv selv.
+            </p>
+            <a class="mt-auto mb-md-3" href="#">Se opskrift</a>
+          </div>
+
+          <div class="col-md-6 d-xl-flex flex-column col-xl-3 d-none">
+            <img
+              class="opskrifter-tablet"
+              src="img/pine-drink.jpg"
+              alt="Ananas drink"
+            />
+            <h2 class="mt-md-4">Pina Colada</h2>
+            <p>
+              Har du hørt mage? En glitrende Pina Colada? Jo, den er god nok,
+              denne drink med kokosnød og ananas som altid kan serveres med et
+              smil.
+            </p>
+            <a class="mt-auto mb-md-3" href="#">Se opskrift</a>
+          </div>
+          <div class="col-md-6 d-flex flex-column col-xl-3">
+            <img
+              class="opskrifter-tablet"
+              src="img/pink-drink.jpg"
+              alt="Pink drink"
+            />
+            <h2 class="mt-md-4">Strawberry Daiquri</h2>
+            <p>
+              Man kan nærmest mærke denne drink smelte på tungen. Og sødmen fra
+              Pure Drops Strawberry, kan med sikkerhed pifte denne klassiske
+              jordbær slush-ice op.
+            </p>
+            <a class="mt-auto mb-md-3" href="#">Se opskrift</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 d-flex flex-column col-xl-3 d-xl-none">
+            <img
+              class="opskrifter-tablet"
+              src="img/pine-drink.jpg"
+              alt="Ananas drink"
+            />
+            <h2 class="mt-md-4">Pina Colada</h2>
+            <p>
+              Har du hørt mage? En glitrende Pina Colada? Jo, den er god nok,
+              denne drink med kokosnød og ananas som altid kan serveres med et
+              smil.
+            </p>
+            <a class="mt-auto mb-md-3" href="#">Se opskrift</a>
+          </div>
+
+          <div class="col-md-6 d-flex flex-column col-xl-3 d-xl-none">
+            <img
+              class="opskrifter-tablet"
+              src="img/yellow-drink.jpg"
+              alt="Ananas drink"
+            />
+            <h2 class="mt-md-4">Gin Hass</h2>
+            <p>
+              Man kan altid nuppe en Gin Hass - hvad end det er til festen eller
+              de solrige dage på terassen, passer mango, lemonsodavand og gin
+              altid. Prøv selv.
+            </p>
+            <a class="mt-auto mb-md-3" href="#">Se opskrift</a>
+          </div>
+        </div>
       </div>
 
-      <section id="flasker" class="row">
-        <div class="container-fluid">
-          <div>
+      <div class="container">
+        <button class="col-6 offset-3 mt-4 mb-4" type="button">
+          Se opskrifter
+        </button>
+      </div>
+
+      <!----FLASKER------>
+      <h1 id="udvalg" class="container p-5">
+        Se det glitrende eksklusive udvalg
+      </h1>
+
+      <!----FLASKERBILLEDER TABLET & MOBIL------>
+      <div class="container-fluid d-xl-none d-block">
+        <div class="row no-gutter">
+          <img
+            class="col-md-6 flaske-img d-md-none d-xl-block"
+            src="img/lime-single.png"
+            alt="Lime-flaske"
+          />
+          <div class="col-md-6 lime">
+            <h2>Pure Drops - Lime</h2>
+            <p>
+              Tag det søde med det sure! Eller hvordan er det nu man siger?
+              Under alle omstændigheder, giver Pure Drops Lime dig kant i
+              smagen, og ser super godt ud i mens den gør det. Aldrig har surt
+              været med til at skabe noget så lykkeligt.
+            </p>
+          </div>
+          <img
+            class="col-md-6 flaske-img d-none d-md-block d-xl-none"
+            src="img/lime-single.png"
+            alt="Ananans-flaske"
+          />
+        </div>
+
+        <div class="row no-gutter">
+          <img
+            class="col-md-6 flaske-img"
+            src="img/mango-single.png"
+            alt="Mango-flaske"
+          />
+          <div class="col-md-6 mango">
+            <h2>Pure Drops - Mango</h2>
+            <p>
+              Mango er bare go’! Pure Drops Mango glitrer og skinner, og smager
+              guddommelig i drinks eller desserter - men du behøver ikke vælge.
+              Du kan sagtens nyde både drinks og dessert på samme tid (det er
+              faktisk den ideelle kombination i de fleste tilfælde).
+            </p>
+          </div>
+        </div>
+
+        <div class="row no-gutter">
+          <img
+            class="col-md-6 flaske-img d-md-none d-xl-flex"
+            src="img/pine-single.png"
+            alt="Ananans-flaske"
+          />
+          <div class="col-md-6 pine">
+            <h2>Pure Drops - Pineapple</h2>
+            <p>
+              Når først du har lært Pure Drops Pineapple at kende, vil du have
+              svært ved at forestille dig at du har kunne undværre den indtil
+              nu. Ananassens let sure og samtidig søde smag, sætter kulør livets
+              små stunder og tager dig til sydens sol. Hvad venter du på? Vis
+              dine venner hvordan man mixer med denne sirup.
+            </p>
+          </div>
+          <img
+            class="col-md-6 flaske-img d-none d-md-block d-xl-none"
+            src="img/pine-single.png"
+            alt="Ananans-flaske"
+          />
+        </div>
+
+        <div class="row no-gutter">
+          <img
+            class="col-md-6 flaske-img"
+            src="img/straw-single.png"
+            alt="Jordbær-flaske"
+          />
+          <div class="straw col-md-6">
+            <h2>Pure Drops - Strawberry</h2>
+            <p>
+              De røde bærs sødme er ikke til at få nok af! Både i drinks og til
+              de hjemmelavede pandekager kan Pure Drops Strawberry pifte enhver
+              klassiker op - og så gør det jo ikke noget at det glitrer
+              samtidig.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!------FLASKEBILLEDER DESKTOP------>
+      <div class="container-fluid d-none d-xl-block">
+        <div class="row">
+          <div class="col-3 lime">
             <img
-              class="flaske-single"
+              class="flaske-desk"
               src="img/lime-single.png"
-              alt="Pure Drops - Lime"
+              alt="Flaske - lime"
             />
-            <div class="lime">
-              <h2 class="">Pure Drops - Lime</h2>
-              <p class="">
-                Tag det søde med det sure! Eller hvordan er det nu man siger?
-                Under alle omstændigheder, giver Pure Drops Lime dig kant i
-                smagen, og ser super godt ud i mens den gør det. Aldrig har surt
-                været med til at skabe noget så lykkeligt.
-              </p>
-              <img
-                class="color-graphic"
-                src="img/color-graphic-lime.png"
-                alt=""
-              />
-            </div>
+            <h2>Pure Drops - Lime</h2>
+            <p>
+              Tag det søde med det sure! Eller hvordan er det nu man siger?
+              Under alle omstændigheder, giver Pure Drops Lime dig kant i
+              smagen, og ser super godt ud i mens den gør det. Aldrig har surt
+              været med til at skabe noget så lykkeligt.
+            </p>
+            <img src="img/color-graphic-lime.png" alt="Flaske - lime" />
           </div>
-        </div>
 
-        <div class="container-fluid">
-          <div>
+          <div class="col-3">
             <img
-              class="flaske-single"
-              src="img/pine-single.png"
-              alt="Pure Drops - Pineapple"
-            />
-            <div class="pine">
-              <h2 class="">Pure Drops - Pineapple</h2>
-              <p class="">
-                Når først du har lært Pure Drops Pineapple at kende, vil du have
-                svært ved at forestille dig at du har kunne undværre den indtil
-                nu. Ananassens let sure og samtidig søde smag, sætter kulør
-                livets små stunder og tager dig til sydens sol. Hvad venter du
-                på? Vis dine venner hvordan man mixer med denne sirup.
-              </p>
-              <img
-                class="color-graphic"
-                src="img/color-graphic-pineapple.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="container-fluid">
-          <div>
-            <img
-              class="flaske-single"
-              src="img/straw-single.png"
-              alt="Pure Drops - Strawberry"
-            />
-            <div class="straw">
-              <h2 class="">Pure Drops - Strawberry</h2>
-              <p class="">
-                De røde bærs sødme er ikke til at få nok af! Både i drinks og
-                til de hjemmelavede pandekager kan Pure Drops Strawberry pifte
-                enhver klassiker op - og så gør det jo ikke noget at det glitrer
-                samtidig.
-              </p>
-              <img
-                class="color-graphic"
-                src="img/color-graphic-straw.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="container-fluid">
-          <div>
-            <img
-              class="flaske-single"
+              class="flaske-desk"
               src="img/mango-single.png"
-              alt="Pure Drops - Mango"
+              alt="Flaske - lime"
             />
             <div class="mango">
-              <h2 class="">Pure Drops - Mango</h2>
-              <p class="">
+              <h2>Pure Drops - Mango</h2>
+              <p>
                 Mango er bare go’! Pure Drops Mango glitrer og skinner, og
                 smager guddommelig i drinks eller desserter - men du behøver
                 ikke vælge. Du kan sagtens nyde både drinks og dessert på samme
@@ -271,17 +447,54 @@
                 tilfælde).
               </p>
               <img
-                class="color-graphic"
+                class="grafik-frugt"
                 src="img/color-graphic-mango.png"
-                alt=""
+                alt="Flaske - Mango"
               />
             </div>
           </div>
-        </div>
-      </section>
 
-      <section>
-        <div class="container">
+          <div class="col-3 pine">
+            <img
+              class="flaske-desk"
+              src="img/pine-single.png"
+              alt="Flaske - Ananas"
+            />
+            <h2>Pure Drops - Pineapple</h2>
+            <p>
+              Når først du har lært Pure Drops Pineapple at kende, vil du have
+              svært ved at forestille dig at du har kunne undværre den indtil
+              nu. Ananassens let sure og samtidig søde smag, sætter kulør livets
+              små stunder og tager dig til sydens sol. Hvad venter du på? Vis
+              dine venner hvordan man mixer med denne sirup.
+            </p>
+            <img
+              src="img/color-graphic-pineapple.png"
+              alt="Flaske - pineapple"
+            />
+          </div>
+
+          <div class="col-3 straw">
+            <img
+              class="flaske-desk"
+              src="img/straw-single.png"
+              alt="Flaske - jordbærd"
+            />
+            <h2>Pure Drops - Strawberry</h2>
+            <p>
+              De røde bærs sødme er ikke til at få nok af! Både i drinks og til
+              de hjemmelavede pandekager kan Pure Drops Strawberry pifte enhver
+              klassiker op - og så gør det jo ikke noget at det glitrer
+              samtidig.
+            </p>
+            <img src="img/color-graphic-straw.png" alt="Flaske - Jordbær" />
+          </div>
+        </div>
+      </div>
+
+      <!----INFOGRAFIK---->
+      <section class="container">
+        <div class="row p-5">
           <h1>psst… vidste du ...</h1>
           <p>
             ... at der i Danmark smides der over 163.000 ton mad ud om året i
@@ -332,15 +545,17 @@
         </div>
       </section>
 
-      <div class="container p-4">
-        <h1>del dine Pure Moments med Pure Drops!</h1>
-        <h2>#puredropmoments</h2>
-        <p>
-          Del dine Pure Moments med Pure Drops og vind! <br /><br />
-          Del et af livets gode øjeblikke hvor du har haft gang i Pure Drops, og
-          vind et af hver eksemplar af Pure Drops varianterne. For at deltage,
-          følg Pure Drops og læs mere.
-        </p>
+      <div class="container">
+        <div class="row m-4">
+          <h1>del dine Pure Moments med Pure Drops!</h1>
+          <h2>#puredropmoments</h2>
+          <p>
+            Del dine Pure Moments med Pure Drops og vind! <br /><br />
+            Del et af livets gode øjeblikke hvor du har haft gang i Pure Drops,
+            og vind et af hver eksemplar af Pure Drops varianterne. For at
+            deltage, følg Pure Drops og læs mere.
+          </p>
+        </div>
       </div>
 
       <div class="container">
@@ -369,6 +584,8 @@
         </div>
       </div>
     </main>
+
+    <footer>Dette er en footer</footer>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
