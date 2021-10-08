@@ -13,8 +13,13 @@
       crossorigin="anonymous"
     />
 
+    <!-----COSTUM CSS---->
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="rwd.css" /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <title>Pure Drops | Multimediedesign - KEA</title>
   </head>
@@ -52,25 +57,27 @@
     </header>
 
     <main>
-      <!-------SPLASH---------->
-      <section id="splash" class="pb-2">
+      <!-------SPLASH DESK---------->
+      <section class="splash-bg mobil-splash-bg">
         <div id="splash-mobile" class="img-fluid container-fluid">
           <div class="row">
             <div class="splash-mobil"></div>
             <div class="splash-desk col-xl-8"></div>
-            <div class="desk-sidebar col-xl-4 d-none d-xl-block p-5 mt-5">
-              <h1 class="d-xl-block text-end">Pure Drops</h1>
+            <div class="desk-sidebar mt-auto col-xl-4 d-none d-xl-block p-5">
+              <h1 class="d-xl-block text-end overskrift">Pure Drops</h1>
               <h3 class="d-xl-block text-end">
                 Enjoy pure & conscious syrup drops in happy moments
               </h3>
               <br /><br />
-              <div class="row d-none d-xl-flex justify-content-end m-auto">
+              <!-- <div class="row d-none d-xl-flex justify-content-end m-auto">
                 <button class="col-5 m-1" type="button">Se udvalg</button>
                 <button class="col-5 m-1" type="button">Se opskrifter</button>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
+
+        <!------SPLASH MOBIL-------->
         <div class="m-3 md-m-5 d-block d-xl-none">
           <div id="pure-navn" class="container col-12">
             <h1 class="text-center mt-3 d-flex justify-content-center">
@@ -80,14 +87,20 @@
               Enjoy pure & conscious syrup drops in happy moments
             </h3>
           </div>
-          <div id="pure-knap" class="container">
+          <!-- <div id="pure-knap" class="container">
             <div class="col d-flex justify-content-center m-4">
               <button class="col-6 m-2" type="button">Se udvalg</button>
               <button class="col-6 m-2" type="button">Se opskrifter</button>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
+
+      <div class="img-fluid">
+        <video id="video-splash" autoplay muted loop>
+          <source src="video/glimmer-bg.mp4" type="video/mp4" />
+        </video>
+      </div>
 
       <section id="om-os" class="p-5 container">
         <div class="row">
@@ -112,9 +125,10 @@
         </div>
       </section>
 
+      <!----MOOD-VIDEO---->
       <div class="img-fluid">
         <video id="video" autoplay muted loop>
-          <source src="video/mood-1.mp4" type="video/mp4" />
+          <source src="video/fruit-mood.mp4" type="video/mp4" />
         </video>
       </div>
 
@@ -320,7 +334,10 @@
       </div>
 
       <div class="container">
-        <button class="col-6 offset-3 mt-4 mb-4" type="button">
+        <button
+          class="d-none d-xl-block col-6 offset-3 mt-4 mb-4"
+          type="button"
+        >
           Se opskrifter
         </button>
       </div>
@@ -412,23 +429,112 @@
         </div>
       </div>
 
-      <!------FLASKEBILLEDER DESKTOP------>
-      <div class="container-fluid d-none d-xl-block">
-        <div class="row">
-          <div class="col-3 lime">
+      <div class="container-fluid">
+        <div class="row no-gutter">
+          <div class="lime col-md-6 d-flex flex-column col-xl-3">
             <img
               class="flaske-desk"
               src="img/lime-single.png"
-              alt="Flaske - lime"
+              alt="Limeflaske"
             />
-            <h2>Pure Drops - Lime</h2>
-            <p>
+            <h2 class="mt-md-4 text-gutter-costum">Gin Hass</h2>
+            <p class="text-gutter-costum">
               Tag det søde med det sure! Eller hvordan er det nu man siger?
               Under alle omstændigheder, giver Pure Drops Lime dig kant i
               smagen, og ser super godt ud i mens den gør det. Aldrig har surt
               været med til at skabe noget så lykkeligt.
             </p>
-            <img src="img/color-graphic-lime.png" alt="Flaske - lime" />
+            <img
+              class="mt-auto w-50"
+              src="img/color-graphic-lime.png"
+              alt="Lime-grafik"
+            />
+          </div>
+          <div class="mango col-md-6 d-xl-flex flex-column col-xl-3 d-none">
+            <img
+              class="flaske-desk"
+              src="img/mango-single.png"
+              alt="Mangoflaske"
+            />
+            <h2 class="mt-md-4 text-gutter-costum">Gin Hass</h2>
+            <p class="text-gutter-costum">
+              Mango er bare go’! Pure Drops Mango glitrer og skinner, og smager
+              guddommelig i drinks eller desserter - men du behøver ikke vælge.
+              Du kan sagtens nyde både drinks og dessert på samme tid (det er
+              faktisk den ideelle kombination i de fleste tilfælde).
+            </p>
+            <img
+              class="mt-auto w-50"
+              src="img/color-graphic-mango.png"
+              alt="Mango-grafik"
+            />
+          </div>
+
+          <div class="pine col-md-6 d-xl-flex flex-column col-xl-3 d-none">
+            <img
+              class="flaske-desk"
+              src="img/pine-single.png"
+              alt="Ananas drink"
+            />
+            <h2 class="mt-md-4 text-gutter-costum">Pina Colada</h2>
+            <p class="text-gutter-costum">
+              Når først du har lært Pure Drops Pineapple at kende, vil du have
+              svært ved at forestille dig at du har kunne undværre den indtil
+              nu. Ananassens let sure og samtidig søde smag, sætter kulør livets
+              små stunder og tager dig til sydens sol. Hvad venter du på? Vis
+              dine venner hvordan man mixer med denne sirup.
+            </p>
+            <img
+              class="mt-auto w-50 align-self-end"
+              src="img/color-graphic-pineapple.png"
+              alt="Ananas-grafik"
+            />
+          </div>
+          <div class="straw col-md-6 d-flex flex-column col-xl-3">
+            <img
+              class="flaske-desk"
+              src="img/straw-single.png"
+              alt="Jordbær flaske"
+            />
+            <h2 class="mt-md-4 text-gutter-costum">Strawberry Daiquri</h2>
+            <p class="text-gutter-costum">
+              De røde bærs sødme er ikke til at få nok af! Både i drinks og til
+              de hjemmelavede pandekager kan Pure Drops Strawberry pifte enhver
+              klassiker op - og så gør det jo ikke noget at det glitrer
+              samtidig.
+            </p>
+            <img
+              class="mt-auto w-50 align-self-end"
+              src="img/color-graphic-straw.png"
+              alt="jordbær-grafik"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!------FLASKEBILLEDER DESKTOP------>
+      <!-- <div class="container-fluid d-none d-xl-flex">
+        <div class="row">
+          <div class="col-3">
+            <img
+              class="flaske-desk"
+              src="img/lime-single.png"
+              alt="Flaske - lime"
+            />
+            <div class="lime">
+              <h2>Pure Drops - Lime</h2>
+              <p>
+                Tag det søde med det sure! Eller hvordan er det nu man siger?
+                Under alle omstændigheder, giver Pure Drops Lime dig kant i
+                smagen, og ser super godt ud i mens den gør det. Aldrig har surt
+                været med til at skabe noget så lykkeligt.
+              </p>
+              <img
+                class="grafik-frugt"
+                src="img/color-graphic-lime.png"
+                alt="Flaske - lime"
+              />
+            </div>
           </div>
 
           <div class="col-3">
@@ -454,46 +560,55 @@
             </div>
           </div>
 
-          <div class="col-3 pine">
+          <div class="col-3">
             <img
               class="flaske-desk"
               src="img/pine-single.png"
               alt="Flaske - Ananas"
             />
-            <h2>Pure Drops - Pineapple</h2>
-            <p>
-              Når først du har lært Pure Drops Pineapple at kende, vil du have
-              svært ved at forestille dig at du har kunne undværre den indtil
-              nu. Ananassens let sure og samtidig søde smag, sætter kulør livets
-              små stunder og tager dig til sydens sol. Hvad venter du på? Vis
-              dine venner hvordan man mixer med denne sirup.
-            </p>
-            <img
-              src="img/color-graphic-pineapple.png"
-              alt="Flaske - pineapple"
-            />
+            <div class="pine">
+              <h2>Pure Drops - Pineapple</h2>
+              <p>
+                Når først du har lært Pure Drops Pineapple at kende, vil du have
+                svært ved at forestille dig at du har kunne undværre den indtil
+                nu. Ananassens let sure og samtidig søde smag, sætter kulør
+                livets små stunder og tager dig til sydens sol. Hvad venter du
+                på? Vis dine venner hvordan man mixer med denne sirup.
+              </p>
+              <img
+                class="grafik-frugt"
+                src="img/color-graphic-pineapple.png"
+                alt="Flaske - pineapple"
+              />
+            </div>
           </div>
 
-          <div class="col-3 straw">
+          <div class="col-3">
             <img
               class="flaske-desk"
               src="img/straw-single.png"
               alt="Flaske - jordbærd"
             />
-            <h2>Pure Drops - Strawberry</h2>
-            <p>
-              De røde bærs sødme er ikke til at få nok af! Både i drinks og til
-              de hjemmelavede pandekager kan Pure Drops Strawberry pifte enhver
-              klassiker op - og så gør det jo ikke noget at det glitrer
-              samtidig.
-            </p>
-            <img src="img/color-graphic-straw.png" alt="Flaske - Jordbær" />
+            <div class="straw">
+              <h2>Pure Drops - Strawberry</h2>
+              <p>
+                De røde bærs sødme er ikke til at få nok af! Både i drinks og
+                til de hjemmelavede pandekager kan Pure Drops Strawberry pifte
+                enhver klassiker op - og så gør det jo ikke noget at det glitrer
+                samtidig.
+              </p>
+              <img
+                class="grafik-frugt"
+                src="img/color-graphic-straw.png"
+                alt="Flaske - Jordbær"
+              />
+            </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <!----INFOGRAFIK---->
-      <section class="container">
+      <!----INFOGRAFIK MOBIL/TABLET---->
+      <section class="container d-xl-none">
         <div class="row p-5">
           <h1>psst… vidste du ...</h1>
           <p>
@@ -545,6 +660,58 @@
         </div>
       </section>
 
+      <!---------INFOGRAFIK DESK------------>
+      <div class="container-fluid d-none d-xl-block pt-5 mb-5">
+        <div class="row g-2">
+          <div class="col-7 m-auto px-5">
+            <h1>psst… vidste du ...</h1>
+            <p>
+              ... at der i Danmark smides der over 163.000 ton mad ud om året i
+              detailhandlen? Det er en ærgerlig statestik, men som ikke desto
+              mindre kan ændres! Se med hvordan Pure Drops’ glitrende frugtsirup
+              produceres her under og er med til at mindske madspil. Og hey, hav
+              lige Pure Drops i tankerne, næste gang du skal tilføje lidt
+              glitter i livets små øjeblikke.
+            </p>
+          </div>
+          <div class="col-5">
+            <div class="row no-gutter">
+              <div class="col-6">
+                <img
+                  class="img-fluid"
+                  src="img/infografik1.png"
+                  alt="Infografik-1"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  class="img-fluid"
+                  src="img/infografik2.png"
+                  alt="Infografik-2"
+                />
+              </div>
+            </div>
+            <div class="row no-gutter">
+              <div class="col-6">
+                <img
+                  class="img-fluid"
+                  src="img/infografik3.png"
+                  alt="Infografik-3"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  class="img-fluid"
+                  src="img/infografik4.png"
+                  alt="Infografik-4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-----SOME-CONTENT----->
       <div class="container">
         <div class="row m-4">
           <h1>del dine Pure Moments med Pure Drops!</h1>
@@ -579,20 +746,69 @@
 
       <div class="container">
         <div class="col d-flex justify-content-center m-4">
-          <button class="col-6 m-2" type="button">Følg os på Facebook</button>
-          <button class="col-6 m-2" type="button">Følg os på Instagram</button>
+          <button class="col-6 m-2 fa fa-facebook" type="button">
+            Følg os på Facebook
+          </button>
+          <button class="col-6 m-2 fa fa-instagram" type="button">
+            Følg os på Instagram
+          </button>
         </div>
       </div>
     </main>
 
-    <footer>Dette er en footer</footer>
+    <!--WAVE STYLE-->
+    <div style="overflow: hidden">
+      <svg
+        preserveAspectRatio="none"
+        viewBox="0 0 1200 120"
+        xmlns="http://www.w3.org/2000/svg"
+        style="
+          fill: #fec0c0;
+          width: 112%;
+          height: 165px;
+          transform: rotate(180deg);
+        "
+      >
+        <path
+          d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
+          opacity=".25"
+        />
+        <path
+          d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
+          opacity=".5"
+        />
+        <path
+          d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z"
+        />
+      </svg>
+    </div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <footer>
+      <div class="container-fluid p-3">
+        <div class="row">
+          <div class="col-4">
+            Dette er et fiktivt website i forbindelse med uddannelsen
+            Multimediedesign på KEA
+          </div>
+          <div class="col-4 text-center">
+            <div class="fa fa-facebook"></div>
+          </div>
+          <div class="col-4 text-end">3. SEM 2021</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOOSTRAP -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+
+    <!--GSAP - Green Sock Animationer -->
+    <script>
+      src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js";
+    </script>
 
     <script src="script.js"></script>
   </body>

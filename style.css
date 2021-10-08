@@ -33,14 +33,18 @@ h3 {
   font-style: italic;
 }
 
+p {
+  font-size: 1.1rem;
+}
+
 button {
-  background-color: #f1b9b8;
+  background-color: #f6e6e6;
   border: none;
   padding: 0.5rem;
   font-family: var(--bs-font-sans-serif);
   font-weight: bold;
-  color: var(--bs-white);
-  width: 100%;
+  color: #434343;
+  width: 70%;
 }
 
 a {
@@ -59,8 +63,8 @@ a:hover {
   width: auto;
 }
 
-/*----OTHER ELEMENTS-----*/
-#splash {
+/*----SPLASH-----*/
+.splash-bg {
   background-color: #f6e6e6;
 }
 
@@ -75,18 +79,24 @@ a:hover {
   align-items: center;
 }
 
-/* .m-p-costum {
-  padding: 1rem;
-} */
-
+/* VIDEO */
 #video {
   height: 25vh;
   width: 100%;
   object-fit: cover;
   overflow-x: hidden;
-  object-position: 59%;
+  object-position: center;
 }
 
+#video-splash {
+  height: 10vh;
+  width: 100%;
+  object-fit: cover;
+  overflow-x: hidden;
+  object-position: center;
+}
+
+/* KARRUSSEL MOBIL OPSKRIFTER */
 .carousel-item img {
   height: 70vh;
   object-fit: cover;
@@ -102,54 +112,6 @@ a:hover {
   font-weight: bold;
 }
 
-.flaske-single {
-  height: 50vh;
-  width: 100%;
-  object-fit: cover;
-  object-position: 50%;
-}
-
-.straw {
-  background-color: #f1b9b8;
-  padding: 3rem;
-}
-
-.lime {
-  background-color: #cfe4b0;
-  padding: 3rem;
-}
-
-.pine {
-  background-color: #f2d194;
-  padding: 3rem;
-}
-
-.mango {
-  background-color: #ffd36b;
-  padding: 3rem;
-}
-
-.infografik {
-  width: 100vw;
-}
-
-.info img {
-  height: auto;
-}
-
-.some {
-  width: 100vw;
-  object-fit: cover;
-  object-position: 50%;
-  height: 25vh;
-}
-
-.color-graphic {
-  width: 50vw;
-  object-fit: contain;
-  object-position: 50%;
-}
-
 .opskrifter-tablet {
   height: 30vh;
   object-fit: cover;
@@ -160,8 +122,64 @@ a:hover {
   display: none;
 }
 
+/* SINGLE SHOTS MOBIL */
+.flaske-single {
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50%;
+}
+
+.text-gutter-costum {
+  padding: 3rem;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.straw {
+  background-color: #f1b9b8;
+}
+
+.lime {
+  background-color: #cfe4b0;
+}
+
+.pine {
+  background-color: #f2d194;
+}
+
+.mango {
+  background-color: #ffd36b;
+}
+
+.color-graphic {
+  width: 50vw;
+  object-fit: contain;
+  object-position: 50%;
+}
+
+/* INFOGRAFIK */
+.infografik {
+  width: 100vw;
+}
+
+.info img {
+  height: auto;
+}
+
+/* SOME-OPSLAG */
+.some {
+  width: 100vw;
+  object-fit: cover;
+  object-position: 50%;
+  height: 25vh;
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+  .mobil-splash-bg {
+    background-color: #f6e6e6;
+  }
 }
 /* END "sm-" 576px and up */
 
@@ -190,11 +208,27 @@ a:hover {
     background-size: cover;
     background-position: 0%;
     background-repeat: no-repeat;
-    height: 75vh;
+    height: 85vh;
   }
 
   .splash-mobil {
     display: none;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  a {
+    font-size: 1.5rem;
   }
 }
 /* END "lg-" 992px and up */
@@ -203,13 +237,18 @@ a:hover {
 @media (min-width: 1200px) {
   .splash-desk {
     background-image: url(img/splash.png);
-    background-size: contain;
+    background-size: cover;
     background-position: 0%;
     background-repeat: no-repeat;
     height: 75vh;
+    background-color: #f6e6e6;
   }
 
   .desk-sidebar {
+    background-color: #efefef;
+  }
+
+  .splash-bg {
     background-color: #efefef;
   }
 
@@ -220,7 +259,11 @@ a:hover {
   }
 
   .grafik-frugt {
-    width: 100%;
+    width: 50%;
+  }
+
+  .padding-ekstra {
+    padding: 10rem;
   }
 }
 /* END "xl-" 1200px and up */
