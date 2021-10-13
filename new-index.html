@@ -15,7 +15,7 @@
 
     <!-----COSTUM CSS---->
     <link rel="stylesheet" href="new-style.css" />
-    <link rel="stylesheet" href="rwd.css" />
+    <!-- <link rel="stylesheet" href="rwd.css" /> -->
 
     <link
       rel="stylesheet"
@@ -25,7 +25,21 @@
     <title>Pure Drops | Multimediedesign - KEA</title>
   </head>
   <body>
-    <nav></nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand nav-logo" href="#">PURE DROPS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav align-items-right">
+            <a class="nav-link active" aria-current="page" href="#">Hjem</a>
+            <a class="nav-link" href="#udvalg-sektion">Vores frugtsirup</a>
+            <a class="nav-link" href="#opskrifter-sektion">Drinksopskrifter</a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
     <!----SPLASH------->
     <section>
@@ -80,7 +94,7 @@
     </section>
 
     <!------------OPDELER----------->
-    <div class="opdeler">
+    <div class="opdeler" id="udvalg-sektion">
       <img src="img/opdeler.svg" alt="Sektionsopdeler" />
     </div>
 
@@ -118,7 +132,7 @@
               alt="Linjeopdeler"
             />
             <p class="p-3 w-75 linje-opdeler">
-              Når først du har lært Pure Drops Pineapple at kende, vil du have svært ved at forestille dig at du har kunne undværre den indtil nu. Ananassens let sure og samtidig søde smag, sætter kulør livets små stunder og tager dig til sydens sol. Hvad venter du på? Vis dine venner hvordan man mixer med denne sirup.
+              Når først du har lært Pure Drops Pineapple at kende, vil du have svært ved at forestille dig at du har kunne undvære den indtil nu. Ananassens let sure og samtidig søde smag, sætter kulør livets små stunder og tager dig til sydens sol. Hvad venter du på? Vis dine venner hvordan man mixer med denne sirup.
 
             </p>
           </article>
@@ -163,7 +177,7 @@
     </section>
 
     <!--------OPDELING----------->
-    <div class="opdeler-bund">
+    <div class="opdeler-bund" id="opskrifter-sektion"">
       <img src="img/opdeler.svg" alt="Sektionsopdeler" />
     </div>
 
