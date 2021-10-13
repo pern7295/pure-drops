@@ -13,6 +13,10 @@ body {
   --bs-gutter-y: 0;
 }
 
+header {
+  z-index: 100;
+}
+
 h1 {
   font-family: "Montserrat";
   font-weight: bold;
@@ -84,23 +88,19 @@ a:hover {
   height: 55vh;
 }
 
+/* .bg-splash {
+  background-color: #f6e6e6;
+} */
+
 #button-splash {
   align-items: center;
 }
 
 /* VIDEO */
-#video {
-  height: 25vh;
+.video-mood {
+  height: 45vh;
   width: 100%;
-  object-fit: cover;
-  overflow-x: hidden;
-  object-position: center;
-}
-
-#video-splash {
-  height: 10vh;
-  width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   overflow-x: hidden;
   object-position: center;
 }
@@ -174,6 +174,10 @@ a:hover {
 
 .info img {
   height: auto;
+}
+
+.bg-info-infografik {
+  background-color: #f9f9f9;
 }
 
 /* SOME-OPSLAG */
@@ -259,11 +263,12 @@ a:hover {
 @media (min-width: 1200px) {
   .splash-desk {
     background-image: url(img/splash.png);
-    background-size: cover;
+    background-size: contain;
     background-position: 0%;
     background-repeat: no-repeat;
     height: 95vh;
     background-color: #f6e6e6;
+    background-attachment: fixed;
   }
 
   .desk-sidebar {

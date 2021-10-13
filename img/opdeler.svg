@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1520" height="105" viewBox="0 0 1520 105">
+  <defs>
+    <clipPath id="clip-opdeler">
+      <rect width="1520" height="105"/>
+    </clipPath>
+  </defs>
+  <g id="opdeler" clip-path="url(#clip-opdeler)">
+    <g id="Group_506" data-name="Group 506" transform="translate(-200 -1845)">
+      <g id="Rectangle_238" data-name="Rectangle 238" transform="translate(216 1897)" stroke="#000" stroke-width="1">
+        <rect width="1488" height="3" stroke="none"/>
+        <rect x="0.5" y="0.5" width="1487" height="2" fill="none"/>
+      </g>
+      <g id="Rectangle_240" data-name="Rectangle 240" transform="translate(752 1858)" fill="none" stroke="#000" stroke-width="3">
+        <rect width="416" height="79" stroke="none"/>
+        <rect x="1.5" y="1.5" width="413" height="76" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,33 +1,32 @@
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
-// const sections = document.querySelectorAll("section");
+const flasker = document.querySelector("#flaske-animation");
 
-// sections.forEach((section) => {
-//   const h1 = section.querySelector("h1");
-//   const h2 = section.querySelector("h2");
-//   const p = section.querySelectorAll("p");
-//   gsap
-//     .timeline({
-//       scrollTrigger: {
-//         trigger: section,
-//         start: "50% 50%",
-//         end: "+=200",
-//         scrub: true,
-//       },
-//     })
-//     .from(h1, {
-//       duration: 1,
-//       opacity: 0,
-//     })
-
-//     .from(h2, {
-//       duration: 1,
-//       opacity: 0,
-//     })
-//     .from(p, {
-//       y: 100,
-//       duration: 1,
-//       opacity: 0,
-//       stagger: 1,
-//     });
-// });
+flasker.forEach((flaske) => {
+  const img = flasker.querySelectorAll("img");
+  const h3 = flasker.querySelectorAll("h3");
+  const p = flasker.querySelectorAll("p");
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: "#flaske-animation",
+        start: "50% 50%",
+        end: "+=200",
+        scrub: true,
+      },
+    })
+    .from(img, {
+      duration: 1,
+      opacity: 0,
+    })
+    .from(h3, {
+      duration: 1,
+      opacity: 0,
+    })
+    .from(p, {
+      y: 100,
+      duration: 1,
+      opacity: 0,
+      stagger: 1,
+    });
+});

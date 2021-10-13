@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-linje-grey">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="linje-grey" clip-path="url(#clip-linje-grey)">
+    <rect width="1920" height="1080" fill="#fff"/>
+    <path id="Intersection_270" data-name="Intersection 270" d="M1917.967,533.935l2.033.565Zm-1915.309,0L.626,534.5Zm1915.309,0H0V0H1920V533.935Z" transform="translate(0 272.75)" fill="#f5f5f5"/>
+  </g>
+</svg>

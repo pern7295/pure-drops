@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1860" height="712" viewBox="0 0 1860 712">
+  <defs>
+    <clipPath id="clip-logo-splash">
+      <rect width="1860" height="712"/>
+    </clipPath>
+  </defs>
+  <g id="logo-splash" clip-path="url(#clip-logo-splash)">
+    <text id="P_u_r_e_D_r_o_p_s" data-name="P u r e  D r o p s" transform="translate(930 234)" fill="#0e0e0e" font-size="121" font-family="Montserrat-Bold, Montserrat" font-weight="700" letter-spacing="0.03em"><tspan x="-590.359" y="0" xml:space="preserve">P U R E  D R O P S</tspan></text>
+    <text id="NATURAL_IDENPENDENT_HAPPY" data-name="NATURAL  |  IDENPENDENT  |  HAPPY" transform="translate(926 333)" fill="#0e0e0e" font-size="54" font-family="Montserrat-Bold, Montserrat" font-weight="700" letter-spacing="0.03em"><tspan x="-548.937" y="0" xml:space="preserve">NATURAL  |  IDENPENDENT  |  HAPPY</tspan></text>
+    <text id="Enjoy_pure_conscious_syrup_drops_in_happy_moments" data-name="Enjoy pure &amp; conscious syrup drops in happy moments" transform="translate(926 410)" font-size="40" font-family="Montserrat-Regular, Montserrat"><tspan x="-291.5" y="39">Enjoy pure &amp; conscious syrup </tspan><tspan x="-253.42" y="88">drops in happy moments</tspan></text>
+    <g id="Rectangle_238" data-name="Rectangle 238" transform="translate(81 628)" stroke="#000" stroke-width="1">
+      <rect width="1698" height="3" stroke="none"/>
+      <rect x="0.5" y="0.5" width="1697" height="2" fill="none"/>
+    </g>
+    <g id="Rectangle_240" data-name="Rectangle 240" transform="translate(614 578)" fill="none" stroke="#000" stroke-width="3">
+      <rect width="632" height="107" stroke="none"/>
+      <rect x="1.5" y="1.5" width="629" height="104" fill="none"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="282" height="28" viewBox="0 0 282 28">
+  <defs>
+    <clipPath id="clip-linje-straw">
+      <rect width="282" height="28"/>
+    </clipPath>
+  </defs>
+  <g id="linje-straw" clip-path="url(#clip-linje-straw)">
+    <rect width="282" height="28" fill="#fff"/>
+    <rect id="Rectangle_255" data-name="Rectangle 255" width="282" height="28" fill="#f5e5e5"/>
+  </g>
+</svg>
