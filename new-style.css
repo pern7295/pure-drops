@@ -1,3 +1,7 @@
+:root {
+  --bs-font-sans-serif: "Montserrat";
+}
+
 body {
   max-width: 100vw;
   overflow-x: hidden;
@@ -29,17 +33,31 @@ h3 {
   font-weight: bold;
 }
 
-p {
+/* p {
   font-size: 1.1rem;
+} */
+
+.btn-primary {
+  background-color: #ceacac;
+  font-family: var(--bs-font-sans-serif);
+  color: white;
+  border: none;
+  display: flex;
+  margin: 0 auto;
+  max-width: 200px;
+  text-align: center;
 }
 
-button {
+.btn-primary:active {
   background-color: #f6e6e6;
   border: none;
-  font-family: var(--bs-font-sans-serif);
-  font-weight: bold;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #f6e6e6;
+  border: none;
   color: #434343;
-  text-align: start;
 }
 
 a {
@@ -201,17 +219,17 @@ article * {
     margin: 0 auto;
   }
 
-  h2 {
-    font-size: 3rem;
-  }
-
-  h3 {
+  /* h2 {
     font-size: 2rem;
   }
 
-  p {
+  h3 {
     font-size: 1.5rem;
   }
+
+  p {
+    font-size: 1rem;
+  } */
 
   /* SPLASH */
   .splash-logo {
@@ -260,5 +278,16 @@ article * {
 
 /* // Extra Extra large (XXL) devices (XXL screens, 1400px and up) */
 @media (min-width: 1400px) {
+  /* h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  } */
 }
 /* END "xxl-" 1400px and up */

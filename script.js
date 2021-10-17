@@ -1,39 +1,83 @@
 gsap.registerPlugin(ScrollTrigger);
 
-// // //GASP Animation - Ease In on ScrollTrigger
+const containers = document.querySelectorAll(".min-container .row");
 
-const sections = document.querySelectorAll("section");
+containers.forEach((container) => {
+  const h2s = container.querySelector("h2");
+  const h3s = container.querySelectorAll("h3");
+  const imgs = container.querySelectorAll(".ani-img");
+  const ps = container.querySelectorAll("p");
 
-sections.forEach((section) => {
   gsap
     .timeline({
       scrollTrigger: {
-        trigger: section,
-        start: "center bottom",
+        trigger: container,
+        start: "top 50%",
         end: "+=200",
-        scrub: 1,
+        scrub: true,
         //pin: true,
+        // markers: true,
       },
     })
-    .from(section.querySelector("h2"), {
-      duration: 0.8,
-      opacity: 0,
-      ease: "power1",
-    })
-    .from(section.querySelector("h3"), {
-      duration: 0.8,
-      opacity: 0,
-      ease: "power1",
-    })
 
-    .from(section.querySelectorAll("p"), {
-      duration: 0.8,
+    .from(h2s, {
+      duration: 2,
       opacity: 0,
-      ease: "power1",
-      y: 150,
-      stagger: 1,
+    })
+    .from(h3s, {
+      duration: 2,
+      opacity: 0,
+    })
+    .from(imgs, {
+      duration: 4,
+      opacity: 0,
+      y: 100,
+      stagger: 0.1,
+    })
+    .from(ps, {
+      duration: 2,
+      opacity: 0,
+      y: 40,
+      stagger: 0.1,
     });
 });
+
+//gsap.registerPlugin(ScrollTrigger);
+
+//GASP Animation - Ease In on ScrollTrigger
+
+// const sections = document.querySelectorAll("section");
+
+// sections.forEach((section) => {
+//   gsap
+//     .timeline({
+//       scrollTrigger: {
+//         trigger: section,
+//         start: "center bottom",
+//         end: "+=200",
+//         scrub: 1,
+//         //pin: true,
+//       },
+//     })
+//     .from(section.querySelector("h2"), {
+//       duration: 0.8,
+//       opacity: 0,
+//       ease: "power1",
+//     })
+//     .from(section.querySelector("h3"), {
+//       duration: 0.8,
+//       opacity: 0,
+//       ease: "power1",
+//     })
+
+//     .from(section.querySelectorAll("p"), {
+//       duration: 0.8,
+//       opacity: 0,
+//       ease: "power1",
+//       y: 150,
+//       stagger: 1,
+//     });
+// });
 
 // ---------------------------------------------
 
